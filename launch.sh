@@ -6,7 +6,7 @@ docker run -d \
   -v ./config:/config \
   -v ./megatron_gpt_pretraining.py:/opt/NeMo/examples/nlp/language_modeling/megatron_gpt_pretraining.py \
   -v ./megatron_utils.py:/opt/NeMo/nemo/collections/nlp/modules/common/megatron/megatron_utils.py \
-  nvcr.io/nvidia/nemo:24.07 \
+  nvcr.io/nvidia/nemo:24.09 \
   /bin/bash -c '
     LOG_FILE="/logs/output_$(hostname)_$(date +%Y%m%d_%H%M%S).log"
     touch "$LOG_FILE" && chmod 777 "$LOG_FILE" && \
